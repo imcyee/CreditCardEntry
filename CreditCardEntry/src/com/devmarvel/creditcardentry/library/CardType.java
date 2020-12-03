@@ -10,17 +10,17 @@ class CardRegex {
     // See: http://www.regular-expressions.info/creditcard.html
     static final String REGX_VISA = "^4[0-9]{15}?"; // VISA 16
    // static final String REGX_MC = "^(?:222[1-9]|22[2-8][0-9]|2[3-7][0-9]{2}|270[0-9]|271[0-9]|2720|5[0-9]{3}|67[0-9]{2})[0-9]{12}$"; // MC 16
-   static final String REGX_MC = "^(222[1-9]|22[2-8][0-9]|2[3-7][0-9]{2}|270[0-9]|271[0-9]|2720|5[0-9]{3}|67[0-9]{2})[0-9]{12}$"; // MC 16
-	static final String REGX_AMEX = "^3[47][0-9]{13}$"; // AMEX 15
+    static final String REGX_MC = "^(?:222[1-9]|22[2-8][0-9]|2[3-7][0-9]{2}|270[0-9]|271[0-9]|2720|5[0-9]{3}|67[0-9]{2})[0-9]{12}$"; // MC 16
+    static final String REGX_AMEX = "^3[47][0-9]{13}$"; // AMEX 15
     static final String REGX_DISCOVER = "^6(?:011|5[0-9]{2})[0-9]{12}$"; // Discover 16
     static final String REGX_DINERS_CLUB = "^3(?:0[0-5]|[68][0-9])[0-9]{11}$"; // DinersClub 14
     static final String REGX_JCB = "^35[0-9]{14}$"; // JCB 16
     static final String REGX_VERVE = "^(506099|5061[0-8][0-9]|50619[0-8])[0-9]{13}$"; // Interswitch Verve [Nigeria]
 
     static final String REGX_VISA_TYPE = "^4[0-9]{3}?"; // VISA 16
-    // static final String REGX_MC_TYPE = "^(?:222[1-9]|22[2-8][0-9]|2[3-7][0-9]{2}|270[0-9]|271[0-9]|2720|5[0-9]{3}|67[0-9]{2})$"; // MC 16
-        static final String REGX_MC_TYPE = "^(222[1-9]|22[2-8][0-9]|2[3-7][0-9]{2}|270[0-9]|271[0-9]|2720|5[0-9]{3}|67[0-9]{2})$"; // MC 16
-	static final String REGX_AMEX_TYPE = "^3[47][0-9]{2}$"; // AMEX 15
+   
+    static final String REGX_MC_TYPE = "^(?:222[1-9]|22[2-8][0-9]|2[3-7][0-9]{2}|270[0-9]|271[0-9]|2720|5[0-9]{3}|67[0-9]{2})$"; // MC 16
+    static final String REGX_AMEX_TYPE = "^3[47][0-9]{2}$"; // AMEX 15
     static final String REGX_DISCOVER_TYPE = "^6(?:011|5[0-9]{2})$"; // Discover 16
     static final String REGX_DINERS_CLUB_TYPE = "^3(?:0[0-5]|[68][0-9])[0-9]$"; // DinersClub 14
     static final String REGX_JCB_TYPE = "^35[0-9]{2}$"; // JCB 15
